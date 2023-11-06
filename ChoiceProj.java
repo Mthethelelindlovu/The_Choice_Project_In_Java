@@ -18,11 +18,14 @@ public class ChoiceProj {
    static  int total =0;
     public static void main(String[] args) {
         // TODO code application logic here
+        
+        //prompts the use to enter an integer
         int number;
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter a positive integer less than or equal to 15");
         number = sc.nextInt();
-        
+
+        //checks if the entered number is valid or not
         if(number > 0 && number <=15)
         {
             System.out.println("To proceed enter a choice, either 1 or 2 or 3");
@@ -67,12 +70,14 @@ public class ChoiceProj {
                     break;
                     
                 default:
+                     //displays this message if invalid option has been entered
                     System.out.println("You have entered invalid option, enter either 1 or 2 or 3");
                     break;
             }
         }
         
         else 
+             //message displayed when invalid numbers has been entered
                     System.out.println("You have entred an invalid number");
         
     }
